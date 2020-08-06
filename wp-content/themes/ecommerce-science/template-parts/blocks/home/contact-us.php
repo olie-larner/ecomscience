@@ -22,7 +22,7 @@ $buttonCopy = get_field('contact_button_copy');
  ?>
 
 <div class="container relative py-40 mx-auto text-white basic-sans">
-      <div class="flex flex-col w-full mx-auto md:flex-row">
+      <div class="flex flex-col w-11/12 mx-auto md:flex-row">
         <div class="w-11/12 mx-auto md:mx-0 md:w-1/2">
           <h2 class="pb-10 text-4xl font-bold leading-tight text-center text-white md:pb-20 md:text-left">
             <?php echo $mainIntro ?>

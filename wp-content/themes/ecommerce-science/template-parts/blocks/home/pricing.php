@@ -21,9 +21,9 @@ $title = get_field('pricing_title');
  ?>
 
 
-<div class="relative w-10/12 mx-auto text-white basic-sans">
+<div class="relative w-full mx-auto text-white basic-sans">
       <h2 class="pb-20 text-4xl font-bold text-center">Pricing</h2>
-      <div class="w-10/12 mx-auto grid-gap md:grid md:gap-4 md:grid-cols-3 ">
+      <div class="w-full mx-auto grid-gap md:grid md:gap-0 md:grid-cols-3 ">
 
       <?php if ( have_rows( 'price_option' ) ): ?>
             <?php while ( have_rows( 'price_option' ) ): the_row(); ?>

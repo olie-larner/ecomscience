@@ -37,7 +37,7 @@ $authorImage = get_field('author_image');
               <?php echo $authorName ?>
               <span class="basic-sans-thin"><?php echo $authorCompany ?></span>
             </h4>
-            <p class="w-11/12 mx-auto basic-sans-thin">
+            <p class="w-11/12 mx-auto sm:w-8/12 basic-sans-thin">
             <?php echo $aboutAuthor ?>
             </p>
           </div>

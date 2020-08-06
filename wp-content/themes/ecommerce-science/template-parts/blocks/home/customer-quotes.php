@@ -23,7 +23,7 @@ $title = get_field('quotes_section_title');
     <h2 class="pb-20 text-4xl font-bold text-center text-white">
         <?php echo $title ?>
     </h2>
-    <div class="w-full mx-auto grid-gap sm:grid sm:gap-4 sm:grid-cols-2 ">
+    <div class="w-10/12 mx-auto grid-gap sm:grid sm:gap-4 sm:grid-cols-2 ">
         <?php if ( have_rows( 'quotes' ) ): ?>
             <?php while ( have_rows( 'quotes' ) ): the_row(); ?>
             <div class="text-center">

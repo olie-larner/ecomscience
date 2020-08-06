@@ -7,6 +7,11 @@ function my_acf_admin_head() {
     ?>
     <link rel="stylesheet" href="http://localhost:8888/ecommerce/src/styles/global.css">
     <link rel="stylesheet" href="http://localhost:8888/ecommerce/src/styles/tailwind.css">
+    <style>
+        .wp-block {
+    max-width: 1200px!important;
+            }
+    </style>
     <?php
 }
 
