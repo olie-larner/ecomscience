@@ -22,7 +22,7 @@ $title = get_field('pricing_title');
 
 
 <div class="relative w-full mx-auto text-white basic-sans">
-      <h2 class="pb-20 text-4xl font-bold text-center">Pricing</h2>
+      <h2 class="pb-20 text-4xl font-bold text-center text-white"><?php echo $title ?></h2>
       <div class="w-full mx-auto grid-gap md:grid md:gap-0 md:grid-cols-3 ">
 
       <?php if ( have_rows( 'price_option' ) ): ?>
@@ -57,7 +57,7 @@ $title = get_field('pricing_title');
         </div>
         <p class="pb-12 text-xs text-gray-600"><?php echo wp_kses_post( get_sub_field( 'billing_frequency' )) ?></p>
 
-        <button copy="Order" type="button" >Order</button>
+        <button copy="Order" type="button">Order</button>
       </div>
 
       <div class="px-6 pt-6 border-t-2 border-b-0 border-l-0 border-r-0 border-gray-400">

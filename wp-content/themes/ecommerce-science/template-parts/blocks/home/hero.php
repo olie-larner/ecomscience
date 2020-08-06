@@ -37,7 +37,7 @@
         <?php echo $notified ?>
         </h5>
         <form>
-          <div class="relative flex flex-col w-10/12 mx-auto sm:flex-row">
+          <div class="relative flex flex-col w-10/12 mx-auto sm:flex-row sm:w-3/6">
             <input
               class="w-full py-2 mb-4 text-center bg-white bg-opacity-25 rounded-full sm:pl-3 sm:text-left sm:mb-0"
               placeholder="<?php echo $formButtonPlaceholder ?>"

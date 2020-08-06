@@ -17,6 +17,17 @@ function my_acf_admin_head() {
 
 add_action('acf/input/admin_head', 'my_acf_admin_head');
 
+if( function_exists('acf_add_options_page') ) {
+	
+	acf_add_options_page(array(
+        'page_title' => 'Site Settings',
+        'menu_title' => 'Site Settings',
+        'menu_slug' => 'site-settings',
+        'show_in_graphql' => true
+    ));
+	
+}
+
  //Register Custom Post Type - Courses
 
 add_action('init', function () {

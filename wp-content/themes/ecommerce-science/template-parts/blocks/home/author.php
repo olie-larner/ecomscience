@@ -29,7 +29,7 @@ $authorImage = get_field('author_image');
 
        
           <div class="relative w-64 mx-auto rounded-full" >
-            <img src="<?php echo $authorImage['sizes']['large'] ?>" alt="" class="object-cover w-full" />
+            <img src="<?php echo $authorImage['sizes']['large'] ?>" alt="" class="object-cover w-full border-none" />
           </div>
 
           <div class="relative pt-8 text-center" >
