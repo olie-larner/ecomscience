@@ -22,7 +22,7 @@ $authorImage = get_field('author_image');
 
 ?>
 
-<div class="relative w-full pb-48 text-white basic-sans <?php echo esc_attr($className) ?>">
+<div class="relative w-full pb-24 text-white basic-sans <?php echo esc_attr($className) ?>">
 
       <div class="container max-w-screen-lg mx-auto">
         <h2 class="pb-10 text-3xl text-center text-white">Course author</h2>
@@ -37,7 +37,7 @@ $authorImage = get_field('author_image');
               <?php echo $authorName ?>
               <span class="basic-sans-thin"><?php echo $authorCompany ?></span>
             </h4>
-            <p class="w-11/12 mx-auto sm:w-8/12 basic-sans-thin">
+            <p class="w-11/12 mx-auto basic-sans-thin">
             <?php echo $aboutAuthor ?>
             </p>
           </div>

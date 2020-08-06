@@ -82,4 +82,29 @@ function register_acf_block_types(){
             'keywords' => array('quotes', 'home'),
         )
     );
+    acf_register_block_type(
+        array(
+            'name' => 'contact-us',
+            'title' => __('Contact Us'),
+            'description' => __('Contact section for the main page'),
+            'render_template' =>
+            'template-parts/blocks/home/contact-us.php',
+            'icon' => 'editor-paste-text',
+            'keywords' => array('contact', 'home'),
+        )
+    );
+
+    acf_register_block_type(
+        array(
+            'name' => 'pricing',
+            'title' => __('Pricing'),
+            'description' => __('Pricing section for the main page'),
+            'render_template' =>
+            'template-parts/blocks/home/pricing.php',
+            'icon' => 'editor-paste-text',
+            'keywords' => array('pricing', 'home'),
+        )
+    );
+
+
 }
