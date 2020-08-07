@@ -158,4 +158,16 @@ function register_acf_block_types(){
         )
     );
 
+    acf_register_block_type(
+        array(
+            'name' => 'video',
+            'title' => __('Video Player'),
+            'description' => __('Video for the main page'),
+            'render_template' =>
+            'template-parts/blocks/home/video.php',
+            'icon' => 'editor-paste-text',
+            'keywords' => array('video', 'home'),
+        )
+    );
+
 }
