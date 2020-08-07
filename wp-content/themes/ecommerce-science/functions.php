@@ -134,4 +134,28 @@ function register_acf_block_types(){
         )
     );
 
+    acf_register_block_type(
+        array(
+            'name' => 'logos',
+            'title' => __('Logos'),
+            'description' => __('Logos for the main page'),
+            'render_template' =>
+            'template-parts/blocks/home/logos.php',
+            'icon' => 'editor-paste-text',
+            'keywords' => array('logos', 'home'),
+        )
+    );
+
+    acf_register_block_type(
+        array(
+            'name' => 'whats-inside',
+            'title' => __('Whats Inside'),
+            'description' => __('Whats Inside section for the main page'),
+            'render_template' =>
+            'template-parts/blocks/home/whats-inside.php',
+            'icon' => 'editor-paste-text',
+            'keywords' => array('whats-inside', 'home'),
+        )
+    );
+
 }
