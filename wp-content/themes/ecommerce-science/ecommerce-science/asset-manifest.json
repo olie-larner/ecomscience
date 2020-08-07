@@ -1,19 +1,22 @@
 {
   "files": {
-    "static/js/1.chunk.js": "/ecomscience/wp-content/themes/ecommerce-science/static/js/1.chunk.js",
-    "static/js/1.chunk.js.map": "/ecomscience/wp-content/themes/ecommerce-science/static/js/1.chunk.js.map",
     "main.css": "/ecomscience/wp-content/themes/ecommerce-science/static/css/main.chunk.css",
     "main.js": "/ecomscience/wp-content/themes/ecommerce-science/static/js/main.chunk.js",
-    "main.css.map": "/ecomscience/wp-content/themes/ecommerce-science/static/css/main.chunk.css.map",
     "main.js.map": "/ecomscience/wp-content/themes/ecommerce-science/static/js/main.chunk.js.map",
     "runtime-main.js": "/ecomscience/wp-content/themes/ecommerce-science/static/js/bundle.js",
     "runtime-main.js.map": "/ecomscience/wp-content/themes/ecommerce-science/static/js/bundle.js.map",
+    "static/js/2.chunk.js": "/ecomscience/wp-content/themes/ecommerce-science/static/js/2.chunk.js",
+    "static/js/2.chunk.js.map": "/ecomscience/wp-content/themes/ecommerce-science/static/js/2.chunk.js.map",
     "index.php": "/ecomscience/wp-content/themes/ecommerce-science/index.php",
+    "precache-manifest.8eb9739adb17a3903da02e3d31054c3f.js": "/ecomscience/wp-content/themes/ecommerce-science/precache-manifest.8eb9739adb17a3903da02e3d31054c3f.js",
+    "service-worker.js": "/ecomscience/wp-content/themes/ecommerce-science/service-worker.js",
+    "static/css/main.chunk.css.map": "/ecomscience/wp-content/themes/ecommerce-science/static/css/main.chunk.css.map",
+    "static/js/2.chunk.js.LICENSE.txt": "/ecomscience/wp-content/themes/ecommerce-science/static/js/2.chunk.js.LICENSE.txt",
     "static/media/logo.svg": "/ecomscience/wp-content/themes/ecommerce-science/static/media/logo.5d5d9eef.svg"
   },
   "entrypoints": [
     "static/js/bundle.js",
-    "static/js/1.chunk.js",
+    "static/js/2.chunk.js",
     "static/css/main.chunk.css",
     "static/js/main.chunk.js"
   ]
