@@ -122,5 +122,16 @@ function register_acf_block_types(){
         )
     );
 
+    acf_register_block_type(
+        array(
+            'name' => 'large-quote',
+            'title' => __('Large Quote'),
+            'description' => __('Large Quote for the main page'),
+            'render_template' =>
+            'template-parts/blocks/home/large-quote.php',
+            'icon' => 'editor-paste-text',
+            'keywords' => array('quote', 'home'),
+        )
+    );
 
 }
