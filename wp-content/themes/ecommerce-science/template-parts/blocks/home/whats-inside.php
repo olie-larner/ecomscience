@@ -24,7 +24,7 @@
 
 <div class="container relative mx-auto text-white basic-sans <?php echo esc_attr($className) ?>">
     <h2 class="pb-20 text-3xl text-center"><?php echo $sectionTitle ?></h2>
-    <div class="w-10/12 mx-auto grid-gap sm:grid sm:grid-cols-3 sm:grid-rows-3">
+    <div class="w-10/12 mx-auto grid-gap sm:grid sm:grid-cols-3 ">
 		<?php if ( have_rows( 'days' ) ): ?>
             <?php while ( have_rows( 'days' ) ): the_row(); ?>
             <?php $image = get_sub_field( 'icon'); ?>
