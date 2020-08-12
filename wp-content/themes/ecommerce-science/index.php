@@ -39,7 +39,7 @@
         Learn how to configure a non-root public URL by running `npm run wpbuild`.
     -->
     <title>React WordPress Theme</title>
-<link href="/ecomscience/wp-content/themes/ecommerce-science/static/css/main.chunk.css?3eb78924299848890476" rel="stylesheet"></head>
+<link href="/ecomscience/wp-content/themes/ecommerce-science/static/css/main.chunk.css?f729975fe9875e320b47" rel="stylesheet"></head>
     <body>
     <noscript>
         You need to enable JavaScript to run this app.
@@ -55,5 +55,5 @@
         To begin the development, run `npm run wpstart` or `yarn wpstart`.
         To create a production bundle, use `npm run wpbuild` or `yarn wpbuild`.
     -->
-    <script src="/ecomscience/wp-content/themes/ecommerce-science/static/js/bundle.js?3eb78924299848890476"></script><script src="/ecomscience/wp-content/themes/ecommerce-science/static/js/0.chunk.js?3eb78924299848890476"></script><script src="/ecomscience/wp-content/themes/ecommerce-science/static/js/main.chunk.js?3eb78924299848890476"></script></body>
+    <script src="/ecomscience/wp-content/themes/ecommerce-science/static/js/bundle.js?f729975fe9875e320b47"></script><script src="/ecomscience/wp-content/themes/ecommerce-science/static/js/1.chunk.js?f729975fe9875e320b47"></script><script src="/ecomscience/wp-content/themes/ecommerce-science/static/js/main.chunk.js?f729975fe9875e320b47"></script></body>
 </html>

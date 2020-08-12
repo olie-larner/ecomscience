@@ -1,5 +1,6 @@
 <?php
 /**
+ * Olie Larner
  * Ecommerce Science functions and definitions
  */
 
@@ -27,6 +28,16 @@ if( function_exists('acf_add_options_page') ) {
     ));
 	
 }
+
+function sydney_child_elipsis($content) {
+	return str_replace('[&hellip;]', '...', $content);
+}
+add_filter('the_excerpt', 'sydney_child_elipsis');
+
+function tn_custom_excerpt_length( $length ) {
+    return 35;
+    }
+add_filter( 'excerpt_length', 'tn_custom_excerpt_length', 999 );
 
  //Register Custom Post Type - Courses
 
@@ -63,17 +74,6 @@ function register_acf_block_types(){
             'template-parts/blocks/home/hero.php',
             'icon' => 'editor-paste-text',
             'keywords' => array('hero', 'home'),
-        )
-    );
-    acf_register_block_type(
-        array(
-            'name' => 'header',
-            'title' => __('Header'),
-            'description' => __('Header for the main page'),
-            'render_template' =>
-            'template-parts/blocks/home/header.php',
-            'icon' => 'editor-paste-text',
-            'keywords' => array('header', 'home'),
         )
     );
     acf_register_block_type(
@@ -167,6 +167,18 @@ function register_acf_block_types(){
             'template-parts/blocks/home/video.php',
             'icon' => 'editor-paste-text',
             'keywords' => array('video', 'home'),
+        )
+    );
+
+    acf_register_block_type(
+        array(
+            'name' => 'post-hero',
+            'title' => __('Post Hero'),
+            'description' => __('Hero section for posts'),
+            'render_template' =>
+            'template-parts/blocks/home/post-hero.php',
+            'icon' => 'editor-paste-text',
+            'keywords' => array('hero', 'post'),
         )
     );
 
