@@ -18,6 +18,8 @@ function my_acf_admin_head() {
 
 add_action('acf/input/admin_head', 'my_acf_admin_head');
 
+// Add Site Settings
+
 if( function_exists('acf_add_options_page') ) {
 	
 	acf_add_options_page(array(
@@ -29,10 +31,14 @@ if( function_exists('acf_add_options_page') ) {
 	
 }
 
+// Remove square brackets from excerpt
+
 function sydney_child_elipsis($content) {
 	return str_replace('[&hellip;]', '...', $content);
 }
 add_filter('the_excerpt', 'sydney_child_elipsis');
+
+// Limit word count in excerpt
 
 function tn_custom_excerpt_length( $length ) {
     return 35;
@@ -51,6 +57,8 @@ add_action('init', function () {
     ]);
 });
 
+// Remove default styles in editor
+
 if (function_exists('acf_register_block_type')){
     add_action('acf/init', 'register_acf_block_types');
 }
@@ -61,6 +69,10 @@ add_filter('block_editor_settings', function ($editor_settings) {
     return $editor_settings;
 }
 );
+
+// Featured Image
+
+add_theme_support( 'post-thumbnails' );
 
 // Register Blocks from ACF
 
@@ -177,6 +189,18 @@ function register_acf_block_types(){
             'description' => __('Hero section for posts'),
             'render_template' =>
             'template-parts/blocks/home/post-hero.php',
+            'icon' => 'editor-paste-text',
+            'keywords' => array('hero', 'post'),
+        )
+    );
+
+    acf_register_block_type(
+        array(
+            'name' => 'slide-hero',
+            'title' => __('Slide Hero'),
+            'description' => __('Slide Hero section for blog landing page'),
+            'render_template' =>
+            'template-parts/blocks/home/slide-hero.php',
             'icon' => 'editor-paste-text',
             'keywords' => array('hero', 'post'),
         )
